@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Route Optimizer Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.1.1/24/outline/css/heroicons.min.css" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "xlsx": "https://esm.sh/xlsx@0.18.5",
+    "@google/genai": "https://esm.sh/@google/genai"
+  }
+}
+</script>
+<style>
+  .focus-ring-sky {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+  .focus-ring-sky:focus-visible {
+    outline-color: #38bdf8; /* sky-500 */
+  }
+   /* Custom scrollbar styles for light theme */
+  .styled-scrollbar-light::-webkit-scrollbar {
+    width: 8px;
+  }
+  .styled-scrollbar-light::-webkit-scrollbar-track {
+    background: #e2e8f0; /* slate-200 */
+    border-radius: 10px;
+  }
+  .styled-scrollbar-light::-webkit-scrollbar-thumb {
+    background: #38bdf8; /* sky-500 */
+    border-radius: 10px;
+  }
+  .styled-scrollbar-light::-webkit-scrollbar-thumb:hover {
+    background: #0ea5e9; /* sky-600 */
+  }
+
+  /* Custom scrollbar styles for dark theme (existing ones renamed) */
+  .styled-scrollbar-dark::-webkit-scrollbar {
+    width: 8px;
+  }
+  .styled-scrollbar-dark::-webkit-scrollbar-track {
+    background: #3e4f66; /* Slightly darker slate for track */
+    border-radius: 10px;
+  }
+  .styled-scrollbar-dark::-webkit-scrollbar-thumb {
+    background: #0ea5e9; /* sky-500 */
+    border-radius: 10px;
+  }
+  .styled-scrollbar-dark::-webkit-scrollbar-thumb:hover {
+    background: #0284c7; /* sky-600 */
+  }
+</style>
+</head>
+  <body class="bg-slate-100 text-slate-800 dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html><link rel="stylesheet" href="index.css">
+<script src="index.tsx" type="module"></script>
